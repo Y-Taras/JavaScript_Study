@@ -35,7 +35,6 @@ function ABCheck(str){
   		}
   	}
   	*/
-  	
   }
 
   return result;
