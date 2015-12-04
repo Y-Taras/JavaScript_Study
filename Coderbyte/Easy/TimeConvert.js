@@ -69,7 +69,8 @@ function TimeConvert(num) {
   }
   
   /*
-  For extra style. Coderbyte won't accept though because they want 2:3 not 2:03:
+  
+  For extra style. Coderbyte won't accept though because they want 2:3 not 2:03.
   
   var newMinute=0;
   if (minutes<10){
@@ -77,7 +78,7 @@ function TimeConvert(num) {
   }else if(minutes>10){
     newMinutes=minutes;
   }
-    
+  
   */
   
   return(hours + ":" + newMinutes); 
