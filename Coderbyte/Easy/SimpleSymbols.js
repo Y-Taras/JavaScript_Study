@@ -14,8 +14,8 @@
   *First split() the string into individual characters.
   *Intially will be set to true so only have to test letters for false.
   *Check if character is a letter, if so then:
-    - If it the index is at the beginning or end of the string it must be false because "+" wouldn't be on both side.
-    - Othewise if the character is not in the beginning or end, test if the "+" is not both sides of the letter.
+    - If it's index is at the beginning or end of the string it must be false because "+" wouldn't be on both side.
+    - Otherwise if the character is not in the beginning or end, test if the "+" is not both sides of the letter.
 */
 
 function SimpleSymbols(str) { 
