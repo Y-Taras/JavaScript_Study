@@ -11,7 +11,7 @@
     * Think about problem during break.
     
   * If still cannot figure out, look for hints from other users who have completed the problem.
-    * NO COPY AND PASTING! Seriously, what's the point? You're really to learn right?
+    * NO COPY AND PASTING! Seriously, what's the point?
     * Read, analyze, and learn something new so you understand how they solved it.
     * Next time you can use this new knowledge for another problem! :)
   
