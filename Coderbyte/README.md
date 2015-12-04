@@ -10,6 +10,7 @@
    * [W3Schools](http://www.w3schools.com/js/)    
    * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
    * [Stack Overflow](http://stackoverflow.com/)
+   * [JSHint](http://jshint.com/) (check for errors).
   * Lastly, if after going through these resources, I still cannot figure out, do the following steps:
     * Cry (just kidding. maybe.)
     * Take a coffee/meal/snake/exercise break.
