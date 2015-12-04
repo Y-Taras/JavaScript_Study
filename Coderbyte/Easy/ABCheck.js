@@ -28,11 +28,10 @@ function ABCheck(str){
     	}
   	}
   	/* 
-  	
   	else if(chars[i] === "b"){
-      if("a" === chars[i+4] || "a" === chars[i-4]){
-      	result=true;
-  		}
+      	    if("a" === chars[i+4] || "a" === chars[i-4]){
+      	        result=true;
+  	    }
   	}
   	*/
   }
