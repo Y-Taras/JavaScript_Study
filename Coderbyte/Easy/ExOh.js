@@ -18,8 +18,7 @@
 
 function ExOh(str){
   var xCount=0, oCount=0;
-  
- 	for(var i=0; i<str.length; i++) {  
+  for(var i=0; i<str.length; i++) {  
     if(str[i] === "x"){
       xCount+=1;
     }else if(str[i] === "o"){ // I could have just put "else" here since input will always be x's and os'.
@@ -46,8 +45,7 @@ function ExOh(str){
     xCount:0, 
     oCount:0
   }
-  
- 	for(var i=0; i<str.length; i++) {  
+  for(var i=0; i<str.length; i++) {  
     if(/x/.test(str[i])){
       count.xCount+=1;
     }else if(/o/.test(str[i])){ 
