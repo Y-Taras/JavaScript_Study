@@ -1,4 +1,3 @@
-
 /*
   Challenge:
   Using the JavaScript language, have the function LetterChanges(str) take the str parameter being 
