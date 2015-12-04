@@ -12,7 +12,6 @@
     * Lastly, turn array into string + join the words into a sentence with the join() method.
 */
 
-
 function LetterCapitalize(str) { 
   var words=str.split(" ");
   var newArrString=[];
