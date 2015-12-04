@@ -5,6 +5,7 @@
 
   Challenge: ACCEPTED.
   I found two ways to solve this: the array way, or the plain ol' string way.
+  
   The array way:
     *Create a new array by splitting each character with split();
     *Loop through each character normally.
@@ -38,3 +39,4 @@ function FirstReverse(str) {
   
   return reversedString;     
 }
+
