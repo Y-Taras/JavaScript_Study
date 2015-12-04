@@ -9,7 +9,7 @@
     * Loop through each word.
     * Using charAt() method, print the first letter and capitalize it and join it 
       with the rest of the word, except the first letter with the slice() method.
-    *Lastly, turn array into string + join the words into a sentence with the join() method.
+    * Lastly, turn array into string + join the words into a sentence with the join() method.
 */
 
 
