@@ -10,7 +10,7 @@
 */
 
 function CheckNums(num1,num2) { 
-  if(num2===num1){ // I reccomend putting this if statement first to dodge any possible errors/wrong results..
+  if(num2===num1){ // I recommend putting this if statement first to dodge any possible errors/wrong results..
   	return -1; 
   }else if(num2>num1){
   	return true; 
