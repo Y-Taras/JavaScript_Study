@@ -55,5 +55,5 @@ function ExOh(str){
     }
  }
 
-  return count.xCount === count.oCount ? true : false; // a simpler if else statement. boolean question ? if true : if false
+  return count.xCount === count.oCount ? true : false;
 }
