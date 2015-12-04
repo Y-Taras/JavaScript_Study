@@ -31,7 +31,7 @@ function FirstReverse(str) {
 */
     
 function FirstReverse(str) { 
-  var reversedString=""; //have to add ="" or it will output undefined.
+  var reversedString=""; // have to add ="" or it will output undefined.
   	
   for(var i=str.length-1; i>=0; i--){
     reversedString+=(str[i]);
