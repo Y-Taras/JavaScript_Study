@@ -24,7 +24,7 @@ function SimpleSymbols(str) {
   
   for(var i=0; i<characters.length;i++){
     if(/[a-z A-Z]/i.test(characters[i])){ // if it is a letter, lowercase/uppercase.
-      if(i===0 || i===characters.length-1){ // and if the index is at the beginning or end of the string
+      if(i===0 || i===characters.length-1){ // and if the index is at the beginning or end of the string.
         result=false;
       }else if(characters[i+1] !== "+" || characters[i-1] !== "+") { // or it doesn't have "+" on both sides.
         result=false; 
