@@ -12,7 +12,7 @@
 */
 
 function AlphabetSoup(str) { 
-	var alphabetize=str.split("").sort().join("");
+  var alphabetize=str.split("").sort().join("");
   
   return alphabetize;        
 }
