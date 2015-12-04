@@ -6,8 +6,8 @@
   For the test cases, the range will be between 1 and 18. 
 
   Challenge: ACCEPTED.
-  Loop through numbers starting with 1(since we're not multiplying by 0) until num.
-  Multiply each result with the preceding number until reach greater than num.
+  * Loop through numbers starting with 1(since we're not multiplying by 0) until num.
+  * Multiply each result with the preceding number until reach greater than num.
 */
 
 function FirstFactorial(num) { 
