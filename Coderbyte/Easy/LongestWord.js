@@ -7,9 +7,9 @@
  
   Challenge: ACCEPTED.
   * Take out any punctuations in the sentence and split it into words.
-  *loop through each word:
-    if the word is just as long as the previous one. Print the previous one.
-    if either word is longer than the other, print that longest word.
+  * Loop through each word:
+    * if the word is just as long as the previous one. Print the previous one.
+    * if either word is longer than the other, print that longest word.
 */
 
 function LongestWord(sen) { 
