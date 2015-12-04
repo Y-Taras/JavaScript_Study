@@ -26,8 +26,8 @@ function FirstReverse(str) {
 
 /*
   The plain ol' string way:
-    *Loop through the string backwards.
-    *Insert each letter into string.
+    * Loop through the string backwards.
+    * Insert each letter into string.
 */
     
 function FirstReverse(str) { 
