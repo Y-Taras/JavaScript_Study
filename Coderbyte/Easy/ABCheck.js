@@ -19,14 +19,14 @@
 
 function ABCheck(str){
   var chars = str.toLowerCase().split("");
-	var result=false;
+  var result=false;
   
   for(var i=0; i<chars.length; i++) {
-  	if(chars[i] === "a") { //assuming all inputs are lowercase
+    if(chars[i] === "a") { //assuming all inputs are lowercase
     	if("b" === chars[i+4] || "b" === chars[i-4]){
-      	result=true;
+      		result=true;
     	}
-  	}
+    }
   	/* 
   	else if(chars[i] === "b"){
       	    if("a" === chars[i+4] || "a" === chars[i-4]){
