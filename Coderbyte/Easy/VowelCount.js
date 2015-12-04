@@ -6,7 +6,6 @@
   count y as a vowel for this challenge.
   
   Challenge: ACCEPTED.
-  I figured out two ways to solve this challenge.
   I know it is easy to solve this problem with if str.charAt(i)=== every single vowel,
   but I wanted to solve it with less code. See below.
   * After creating an intial vowel count variable loop through string.
