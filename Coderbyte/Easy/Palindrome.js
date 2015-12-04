@@ -21,8 +21,8 @@ function Palindrome(str){
   for(var i=str.length-1; i>=0; i--){
     reversedString+=str[i];
   }
-
-	if(str === reversedString){
+  
+  if(str === reversedString){
     return true;
   }else{
     return false;
@@ -39,8 +39,8 @@ function Palindrome(str){
 
 function Palindrome(str){
   var reversedString=str.split("").reverse().join("");
-
-	if(str === reversedString){
+  
+  if(str === reversedString){
     return true;
   }else{
     return false;
