@@ -10,9 +10,9 @@
   solving the same problems and practice my problem solving skills + fun.
   
   First way(least complicated):
-  * For hours simply divide number entered by 60.
-  * Roundown with Math.floor() to delete remainder.
-  * For minutes by using modulus we know if num goes evenly into 60, 
+    * For hours simply divide number entered by 60.
+    * Roundown with Math.floor() to delete remainder.
+    * For minutes by using modulus we know if num goes evenly into 60, 
     there are no minutes, if it doesn't, will be minutes. 
 */
 
@@ -25,9 +25,9 @@ function TimeConvert(num) {
 
 /* 
   More complicated way:
-  * By using a while loop we make sure that as long as the number is greater than or = to 60
+    * By using a while loop we make sure that as long as the number is greater than or = to 60
     one more hour will be added.
-  * If the number is less than 60, or eventually after it's gone through the while loop,
+    * If the number is less than 60, or eventually after it's gone through the while loop,
     this must be the minutes.
 */
 
