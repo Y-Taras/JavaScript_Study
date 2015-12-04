@@ -1,8 +1,8 @@
 ###Why Coderbyte?
+ * It's fun.
  * Practice my JavaScript skills.
  * Practice my problem solving skills.
  * Helpful for tech bootcamp interviews.
- * It's fun.
 
 ###My Process:
   * Do the challenges.
