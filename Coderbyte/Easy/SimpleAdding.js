@@ -6,15 +6,16 @@
   Challenge: ACCEPTED.
   *Tips:
     -Similar to FirstFactorial problem.
-  * Split string into single characters and make them lowercase(only vowels will later be capitalized).
+  * Loop through each num from 1 to num.
+  * Add each result with the preceding number until reach greater than num.
 */
 
-function SimpleAdding(num) { 
-    var addedNum=0;
+function SimpleAdding(num) {
+  var addedNum=0;
   
-  	for(i=1; i<=num; i++){
-  		addedNum+=i; 
-  	}
+  for(i=1; i<=num; i++){
+  	addedNum+=i; 
+  }
   
-  	return addedNum;         
+  return addedNum;         
 }
