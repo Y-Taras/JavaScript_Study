@@ -7,7 +7,7 @@
   Punctuation and numbers will not be part of the string.
   
   Challenge: ACCEPTED.
-  There are two ways to solve this. The only difference is how you reverse the string.
+  There are two ways to solved this. The only difference is how you reverse the string.
   First way(long way):
     * Create a string variable.
     * Loop through the string backwards and insert into variable.
