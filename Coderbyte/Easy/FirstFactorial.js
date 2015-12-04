@@ -9,10 +9,9 @@
   * Multiply each result with the preceding number until reach greater than num.
 */
 
-function FirstFactorial(num) { 
+function FirstFactorial(num) {
   var newNum=1;
-  
-	for(var i=1; i<=num ;i++){
+  for(var i=1; i<=num ;i++){
     newNum*=i;
   }
   	
