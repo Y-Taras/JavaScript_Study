@@ -7,10 +7,10 @@
   I found two ways to solve this: the array way, or the plain ol' string way.
   
   The array way:
-    *Create a new array by splitting each character with split();
-    *Loop through each character normally.
-    *Insert one character before another with unshift into array.
-    *Turn the array back into an array by joining the characters together.
+    * Create a new array by splitting each character with split();
+    * Loop through each character normally.
+    * Insert one character before another with unshift into array.
+    * Turn the array back into a string by joining the characters together.
 */
 
 function FirstReverse(str) { 
