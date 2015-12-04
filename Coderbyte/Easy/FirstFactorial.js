@@ -10,7 +10,6 @@
   Multiply each result with the preceding number until reach greater than num.
 */
 
-
 function FirstFactorial(num) { 
   var newNum=1;
   
