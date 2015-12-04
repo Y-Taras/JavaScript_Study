@@ -1,4 +1,3 @@
-
 /*
   Challenge:
   Using the JavaScript language, have the function CheckNums(num1,num2) 
@@ -14,8 +13,7 @@
   * For hours simply divide number entered by 60.
   * Roundown with Math.floor() to delete remainder.
   * For minutes by using modulus we know if num goes evenly into 60, 
-    thus the remainder, if it doesn't, will be minutes. We use 60 
-    because if num goes evenly into 60 that means hours, no minutes.
+    there are no minutes, if it doesn't, will be minutes. 
 */
 
 function TimeConvert(num) { 
@@ -84,8 +82,3 @@ function TimeConvert(num) {
   
   return(hours + ":" + newMinutes); 
 }
-    
-    
-    
-    
-    
