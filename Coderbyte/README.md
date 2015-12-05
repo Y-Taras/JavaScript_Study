@@ -12,7 +12,7 @@
    * [Stack Overflow](http://stackoverflow.com/)
    * [JSHint](http://jshint.com/) (check for errors).
   * Lastly, if after going through these resources, I still cannot figure out, do the following steps:
-    * Cry (just kidding. maybe?)
+    * Cry (just kidding. maybe.)
     * Take a coffee/meal/snack/exercise break.
     * Think about problem during break.
   * If still cannot figure out, look for hints from other users who have completed the problem.
