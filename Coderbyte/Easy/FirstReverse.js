@@ -4,7 +4,7 @@
   the str parameter being passed and return the string in reversed order.
 
   Challenge: ACCEPTED.
-  I found two ways to solve this: the array way, or the plain ol' string way.
+  I found three ways to solve this: the array way, or the plain ol' string way.
   
   The array way:
     * Create a new array by splitting each character with split();
@@ -40,3 +40,10 @@ function FirstReverse(str) {
   return reversedString;     
 }
 
+/*
+  The simplest way. Making use of javaScript build-in methods!
+*/
+
+function FirstReverse(str) {
+  return str.split("").reverse().join("");
+}
