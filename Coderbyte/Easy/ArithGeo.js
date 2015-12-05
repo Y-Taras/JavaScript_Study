@@ -31,7 +31,7 @@ function ArithGeo(arr){
   var geometric=[];
   
   for(var i=1; i<arr.length; i++){
-  	arithmetic.push(arr[i]-arr[i-1]);// number - previous number
+    arithmetic.push(arr[i]-arr[i-1]);// number - previous number
     geometric.push(arr[i]/arr[i-1]); // number / previous number
   }
   
