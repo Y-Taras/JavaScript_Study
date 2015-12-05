@@ -49,7 +49,7 @@ function TimeConvert(num) {
 
 /*
   Even more complicated way(How I originally solved it):
-    * Also found on [Stack Overflow](http://stackoverflow.com/questions/34042206/timeconvert-javascript-function-on-coderbyte/34042320#34042320).
+    * Also found on Stack Overflow: http://stackoverflow.com/questions/34042206/timeconvert-javascript-function-on-coderbyte/34042320#34042320.
     * Loop through the num every 60. 
     * For every 60, add an hour, and subtract 60 for every iteration so num doesn't start over but goes every 60.
     * Once num gets down to less than 60, this number must be minutes.
