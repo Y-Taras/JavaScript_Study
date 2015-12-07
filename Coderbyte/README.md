@@ -11,7 +11,7 @@
    * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
    * [Stack Overflow](http://stackoverflow.com/)
    * [JSHint](http://jshint.com/) (check for errors).
-   * [JavaScript Tutor](http://www.pythontutor.com/javascript.html#mode=display) (Takes you though the steps of your function. Super cool!
+   * [JavaScript Tutor](http://www.pythontutor.com/javascript.html#mode=display) (Takes you though the steps of your function. Super cool!)
    * [JSFiddle](http://jsfiddle.net/) (test your code in case Coderbyte is being buggy).
   * Lastly, if after going through these resources, I still cannot figure out, do the following steps:
     * Cry (just kidding. maybe.)
