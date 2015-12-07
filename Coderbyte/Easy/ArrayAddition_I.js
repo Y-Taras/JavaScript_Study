@@ -21,7 +21,6 @@
     * Create a recursion function that checks if the numbers add up to the largest number, and if
       not, check that if some numbers in array are subtracted from the largest num they are ===
       to the largest number.
-    
 */
 
  function ArrayAdditionI(array){
