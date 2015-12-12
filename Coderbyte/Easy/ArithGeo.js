@@ -18,7 +18,7 @@
     - We will later check if all numbers are the same in both arrays so...
       - By subtracting the current value with value before it, we test if each number is the result of the same addition.
           - Push this number into arithmetic array.
-      - By diving the current value with the one before it, we test if each number is the result of the same multiplication.
+      - By dividing the current value with the one before it, we test if each number is the result of the same multiplication.
           - Push this number into geometric array.
   * Create a function that loops through an array and tests if all values are the same.
   * Use this new function on both the arithmetic and geometric arrays.
