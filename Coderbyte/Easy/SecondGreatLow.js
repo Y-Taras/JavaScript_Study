@@ -8,6 +8,7 @@
     It can get tricky if there's just two numbers!
 */
 
+working on it: http://jsfiddle.net/qrdn0opv/13/
 
 
 
