@@ -11,26 +11,19 @@
   * Tips:
     -The main point here is the letters, not the numbers or symbols other than "+". 
      So test the letters and it's surroundings for false possibilities.
-  *First split() the string into individual characters.
   *Intially will be set to true so only have to test letters for false.
   *Check if character is a letter, if so then:
-    - If it's index is at the beginning or end of the string it must be false because "+" wouldn't be on both side.
-    - Otherwise if the letter is not in the beginning or end, test if the "+" is not both sides of the letter.
+    - if the "+" is is missing on either side return false.
 */
 
 function SimpleSymbols(str) { 
-  var characters=str.split("");
-  var result=true;
-  
-  for(var i=0; i<characters.length;i++){
-    if(/[a-z A-Z]/i.test(characters[i])){ // if it is a letter, lowercase/uppercase.
-      if(i===0 || i===characters.length-1){ // and if the index is at the beginning or end of the string.
-        result=false;
-      }else if(characters[i+1] !== "+" || characters[i-1] !== "+") { // or it doesn't have "+" on both sides.
-        result=false; 
-      }
+	for(var i=0; i<str.length;i++){
+    	if(/[a-z]/.test(str[i])){
+        	if(str[i+1]!=="+" || str[i-1] !== "+"){
+              	return false;
+            }
+        }
     }
-  }
-  
-  return result;        
+    return true;     
 }
+
