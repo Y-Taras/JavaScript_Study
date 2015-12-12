@@ -1,9 +1,9 @@
 /*
   Challenge:
-  Using the JavaScript language, have the function CheckNums(num1,num2) 
-  take both parameters being passed and return the string true if num2 
-  is greater than num1, otherwise return the string false. If the parameter 
-  values are equal to each other then return the string -1.
+  Using the JavaScript language, have the function TimeConvert(num) take 
+  the num parameter being passed and return the number of hours and minutes
+  the parameter converts to (ie. if num = 63 then the output should be 1:3).
+  Separate the number of hours and minutes with a colon. 
   
   Challenge: ACCEPTED.
   I found 3 possible ways to solve this. I wanted to try different ways of 
@@ -17,10 +17,9 @@
 */
 
 function TimeConvert(num) { 
-	var hours=Math.floor(num/60); // Sometimes returns remainder. Math.floor rounds down, deleting this remainder.
+  var hours=Math.floor(num/60); // Sometimes returns remainder. Math.floor rounds down, deleting this remainder.
   var minutes= num % 60;// remainder is minutes.
-  
-	return hours + ":" + minutes;
+  return hours + ":" + minutes;
 }
 
 /* 
