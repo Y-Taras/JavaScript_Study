@@ -13,7 +13,7 @@
      So test the letters and it's surroundings for false possibilities.
   *Intially will be set to true so only have to test letters for false.
   *Check if character is a letter, if so then:
-    - if the "+" is is missing on either side return false.
+    - if the "+" is missing on either side return false.
 */
 
 function SimpleSymbols(str) { 
