@@ -14,7 +14,7 @@
 */
 
 function VowelCount(str){
-	var numOfVowels=0;
+  var numOfVowels=0;
   for(var i=0; i<str.length; i++){
     if(/[aeiou]/.test(str[i])){
     	numOfVowels+=1;
