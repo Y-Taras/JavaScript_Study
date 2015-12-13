@@ -12,7 +12,7 @@
 */
 
 function CountingMinutesI(str){
-	var times=str.split("-"); // ["9:00am", "10:00am"]
+  var times=str.split("-"); // ["9:00am", "10:00am"]
   var newTime1=times[0].split(":"); // ["9", "00am"]
   var newTime2=times[1].split(":"); // ["10", "00am"]
   var hours1= newTime1[0].slice(0) * 60; // 9 * 60
