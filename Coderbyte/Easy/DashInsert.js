@@ -16,9 +16,9 @@ function DashInsert(num){
   
   // add a dash to current number's right if current number and next number is odd.
   for(var i=0; i<numArr.length; i++){
-  	if(/[13579]/i.test(numArr[i]) && /[13579]/i.test(numArr[i+1])){
-    	numArr[i] = numArr[i] + "-";
-        }
+    if(/[13579]/i.test(numArr[i]) && /[13579]/i.test(numArr[i+1])){
+      numArr[i] = numArr[i] + "-";
+    }
   }
   
   return numArr.join("");
