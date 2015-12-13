@@ -21,7 +21,7 @@ function DivisionStringified(num1, num2){
   if(divide.length>3){
   	for(var i=divide.length-3; i>0; i-=3){
     	divide[i]= "," + divide[i];
-    } 
+    	} 
   }
     return divide.join("");
 }
