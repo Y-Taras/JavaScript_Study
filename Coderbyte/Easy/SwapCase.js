@@ -9,7 +9,7 @@
   * Loop through and make changes using map().
   * If it is a letter, either lowercase or capitalized:
       - If current letter is lowercase, make it capitalized and push into new array.
-      - If current letter is capitalized, lowecase it and push into new array..
+      - If current letter is capitalized, lowecase it and push into new array.
   * If it's not a letter, just push it into the new array.
   * Turn the new array into a string and return it.
 */
