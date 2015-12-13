@@ -16,14 +16,14 @@
 */
 
 function DivisionStringified(num1, num2){
-	var divide=Math.round((num1/num2)).toString().split("");
+  var divide=Math.round((num1/num2)).toString().split("");
   
   if(divide.length>3){
-  	for(var i=divide.length-3; i>0; i-=3){
-    	divide[i]= "," + divide[i];
-    	} 
+    for(var i=divide.length-3; i>0; i-=3){
+      divide[i]= "," + divide[i];
+    } 
   }
-    return divide.join("");
+  return divide.join("");
 }
 
 // TESTS
