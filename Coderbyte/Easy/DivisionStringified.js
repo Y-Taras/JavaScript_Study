@@ -12,7 +12,7 @@
   * Then we need to turn the numbers into an array.
   * If the numbers length is greater than 3 loop throught the array every 3
     starting from the 3rd to last number.
-  * Add a comma before every 3rd to last number and return result as a string.
+  * Add a comma before every three items and return result as a string.
 */
 
 function DivisionStringified(num1, num2){
