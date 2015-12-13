@@ -10,18 +10,18 @@
     * If so, add a dash to the current number's right.
  */
  
-function DashInsert(num){
-	// turn num into array
+function DashInsert(num){ 
+  // turn num into array
   var numArr=num.toString().split("");
   
   // add a dash to current number's right if current number and next number is odd.
   for(var i=0; i<numArr.length; i++){
   	if(/[13579]/i.test(numArr[i]) && /[13579]/i.test(numArr[i+1])){
     	numArr[i] = numArr[i] + "-";
-    }
+        }
   }
   
-	return numArr.join("");
+  return numArr.join("");
 }
  
 // TESTS
