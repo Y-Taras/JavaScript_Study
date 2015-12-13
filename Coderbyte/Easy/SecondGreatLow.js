@@ -1,27 +1,27 @@
 /*
-  Challenge: 
-    Using the JavaScript language, have the function SecondGreatLow(arr)
-    take the array of numbers stored in arr and return the second lowest
-    and second greatest numbers, respectively, separated by a space.
-    For example: if arr contains [7, 7, 12, 98, 106] the output should be
-    12 98. The array will not be empty and will contain at least 2 numbers.
-    It can get tricky if there's just two numbers!
-    
-  Challenge: ACCEPTED.
-    Tips:
-    * concat() method returns a new array of the combines arrays.
-    * arr.length - 2 gives the length of an array. 
+Challenge: 
+Using the JavaScript language, have the function SecondGreatLow(arr)
+take the array of numbers stored in arr and return the second lowest
+and second greatest numbers, respectively, separated by a space.
+For example: if arr contains [7, 7, 12, 98, 106] the output should be
+12 98. The array will not be empty and will contain at least 2 numbers.
+It can get tricky if there's just two numbers!
+
+Challenge: ACCEPTED.
+ Tips:
+  * concat() method returns a new array of the combines arrays.
+  * arr.length - 2 gives the length of an array. 
         arr[arr.length-2] gives the value on that index.
-    * First sort the array.
-    * Before moving on, create a function that deletes any duplicates.
-    * Now that the array is sorted and duplicates are gone, if there 
-      are more than 2 items in the array push results into two separete arrays:
-      - The second item in the array must be the second lowest num.
-      - The second to last item in the array must be the second greatest num.
-    * If there are less than two numbers in the array:
-      - The second item in the array would be the second lowest num.
-      - The first item in the array would be the second greatest num.
-    * Combine both arrays and turn into string.
+* First sort the array.
+* Before moving on, create a function that deletes any duplicates.
+* Now that the array is sorted and duplicates are gone, if there 
+  are more than 2 items in the array push results into two separete arrays:
+  - The second item in the array must be the second lowest num.
+  - The second to last item in the array must be the second greatest num.
+* If there are less than two numbers in the array:
+  - The second item in the array would be the second lowest num.
+  - The first item in the array would be the second greatest num.
+* Combine both arrays and turn into string.
 */
 
 function SecondGreatLow(arr){
