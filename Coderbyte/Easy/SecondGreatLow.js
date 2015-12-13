@@ -9,8 +9,8 @@
     
   Challenge: ACCEPTED.
     Tips:
-    	* concat() method returns a new array of the combines arrays.
-      * arr.length - 2 gives the length of an array. 
+    * concat() method returns a new array of the combines arrays.
+    * arr.length - 2 gives the length of an array. 
         arr[arr.length-2] gives the value on that index.
     * First sort the array.
     * Before moving on, create a function that deletes any duplicates.
