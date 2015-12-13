@@ -8,7 +8,7 @@
   
   Challenge: ACCEPTED.
   Tips:
- 	The mean is all the numbers added up and divided by the length.
+  The mean is all the numbers added up and divided by the length.
   The mode is the number repeated most.
   
   * Sort the array -- useful for finding mode later.
@@ -21,7 +21,7 @@
  */
  
  function MeanMode(arr){
- 	var theArr=arr.sort(function(a,b){return a-b});
+   var theArr=arr.sort(function(a,b){return a-b});
   var mean=0;
   var mode=0;
   var currentRepeats=0;
