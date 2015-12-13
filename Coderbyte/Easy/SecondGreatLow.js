@@ -22,7 +22,6 @@
   - The second item in the array would be the second lowest num.
   - The first item in the array would be the second greatest num.
  * Combine both arrays and turn into string.
-
 */
 
 function SecondGreatLow(arr){
