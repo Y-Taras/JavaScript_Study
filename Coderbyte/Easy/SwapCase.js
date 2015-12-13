@@ -29,7 +29,6 @@ function SwapCase(str){
     	newStr.push(char);
     }
   });
-	
   return newStr.join("");
 }
  
