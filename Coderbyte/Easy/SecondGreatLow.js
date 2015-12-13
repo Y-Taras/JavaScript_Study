@@ -44,14 +44,12 @@ function SecondGreatLow(arr){
   	secondLow.push(theArr[1]); 
   	secondGreat.push(theArr[theArr.length-2]);
   }else{
-  	secondLow.push(theArr[0]);
+  	secondLow.push(theArr[0]); 
   	secondGreat.push(theArr[0]);
   }
 
 	return secondLow.concat(secondGreat).join(" "); // combine into one array and turn into string.
 }
-
-
 
 // TESTS
 console.log("----");
@@ -61,18 +59,3 @@ console.log(SecondGreatLow([1, 42, 42, 180])); //  === "42 42"
 console.log(SecondGreatLow([4, 90])); //  === "90 4"
 console.log(SecondGreatLow([103, 4, 90])); //  === "90 90"
 console.log(SecondGreatLow([103, 4, 90, 6])); //  === "6 90"
-
-/*
-sort the array
-
-
-  
-  
-concat the two arrays into one aray and join them, return this
-
-idea 2
-
-It would be better to just sort the items and return the second item, sort it in descending order again and return the second item.
-If they are just two items in the array, then return the min and max
-
-*/
