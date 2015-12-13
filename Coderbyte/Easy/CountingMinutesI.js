@@ -8,8 +8,6 @@
   If str is 1:00pm-11:00am the output should be 1320.
   
   Challenge: ACCEPTED.
-  
-  
   Currently:In progress.. http://jsfiddle.net/tzm58d1L/6/
 */
 
