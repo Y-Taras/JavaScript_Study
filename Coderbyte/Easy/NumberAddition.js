@@ -5,7 +5,7 @@
   that final number. For example: if str is "88Hello 3World!" the output should be 91.
   You will have to differentiate between single digit numbers and multiple digit numbers
   like in the example above. So "55Hello" and "5Hello 5" should return two different
-   answers. Each string will contain at least one letter or symbol.
+  answers. Each string will contain at least one letter or symbol.
  
   Challenge: ACCEPTED.
   Tips: 
@@ -20,16 +20,16 @@
 */
  
  function NumberAddition(str){
- 	// creates an array of num matches. 
+   // creates an array of num matches. 
   // Automatically together in array if they are next to each other.
- 	var numInstance=str.match(/\d+/g); 
+  var numInstance=str.match(/\d+/g); 
   var sum=0;
   
   if(numInstance === null){ // if there are no matches stop and return 0.
-  	return 0;
+    return 0;
   }else if(numInstance.length>=1){ // if at least one match, loop through array and add together.
-  	for(var matches in numInstance){
-    	sum+=parseInt(numInstance[matches]); // change to numbers and add together.
+    for(var matches in numInstance){
+    sum+=parseInt(numInstance[matches]); // change to numbers and add together.
     }
   }
   return sum;
@@ -44,15 +44,15 @@
  */
  
  function NumberAddition(str){
- 	// creates an array of num matches. 
-  // Automatically together in array if they are next to each other.
- 	var numInstance=str.match(/\d+/g); 
-  var sum=0;
+ // creates an array of num matches. 
+ // Automatically together in array if they are next to each other.
+ var numInstance=str.match(/\d+/g); 
+ var sum=0;
   
   if(numInstance === null){ // if there are no matches stop and return 0.
-  	return 0;
+    return 0;
   }else if(numInstance.length>=1){ // if at least one match, loop through array and add together.
-  	var numToString= numInstance.join("+");
+    var numToString= numInstance.join("+");
     sum+=eval(numToString);
   }
   return sum;
