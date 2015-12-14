@@ -9,7 +9,8 @@
  
   Challenge: ACCEPTED.
   Tips: 
-  - The match() method searches a string for a match against a regular expression, and returns the matches, as 		an Array object.
+  - The match() method searches a string for a match against a regular expression, and 
+    returns the matches, as an Array object.
   - RegExp: \d searches for all number occurences. +search for all mutiple occurences of \d (greedy).
   - The parseInt() function parses a string argument and returns an integer.
   - The eval() function evaluates or executes an argument.
@@ -37,7 +38,7 @@
  }
  
  /*
- 	Second way to solve. Instead of using for in loop, turn array into a string and
+  Second way to solve. Instead of using for in loop, turn array into a string and
   add a plus sign. Then use the eval() function to your advantage and add everything together!
   Props for the eval() idea goes to connameg. I wanted to find another way to solve this and I really
   liked this idea. Very clever! :)
