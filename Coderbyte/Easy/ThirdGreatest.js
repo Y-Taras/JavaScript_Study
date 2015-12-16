@@ -19,10 +19,10 @@
 
 function ThirdGreatest(strArr){
   var sortArr=strArr.sort(function(a,b){
-  return b.length-a.length;});
+    return b.length-a.length;});
 
   var thirdGreatest=sortArr.slice(2,3); // third word in array
-  return thirdGreatest;
+    return thirdGreatest;
 }
  
 // TESTS
