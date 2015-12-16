@@ -22,16 +22,16 @@
 function PowersofTwo(num){
   while(num !==2){  
     if(num === Math.floor(num)){
-  	  num= num/2;
-  	}else if(num !== Math.floor(num)){
-  	  num= num*2; 
-  	  break;
+      num= num/2;
+    }else if(num !== Math.floor(num)){
+      num= num*2; 
+      break;
     }else{
-  	  break;
-  	}	    
- 	}
+      break;
+    }	    
+  }
   
-	return num % 2 === 0 ? true : false;
+return num % 2 === 0 ? true : false;
 }
 
 // TESTS
