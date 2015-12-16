@@ -17,8 +17,6 @@
   * Now the third word will always be the third greatest.
 */
 
-
-
 function ThirdGreatest(strArr){
 	var sortArr=strArr.sort(function(a,b){
   	return b.length-a.length;});
