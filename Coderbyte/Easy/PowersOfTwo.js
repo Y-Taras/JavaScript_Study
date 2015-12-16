@@ -13,7 +13,7 @@
     - As long as the number is a whole number divide by 2 until 
       it becomes 2 or not a whole number.
     - As soon as it's no longer a whole number, this means it can't  
-      be a power of two, return false.
+      be a power of two, return false here or later.
   * A final step to make sure if the whole number left is 2, is by 
     either testing if the number equals to 2 or if the number goes 
     perfectly into 2 using modulos.
@@ -24,11 +24,9 @@ function PowersofTwo(num){
     if(num === Math.floor(num)){ // test for whole number
       num= num/2;
     }else if(num !== Math.floor(num)){ // if not whole number
-      num= num*2; 
+      num= num*2; // can say return false here too.
       break;
-    }else{
-      break;
-    }	    
+    }    
   }
   
  return num % 2 === 0 ? true : false;
