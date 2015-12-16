@@ -21,9 +21,9 @@
 
 function PowersofTwo(num){
   while(num !==2){  
-    if(num === Math.floor(num)){
+    if(num === Math.floor(num)){ // test for whole number
       num= num/2;
-    }else if(num !== Math.floor(num)){
+    }else if(num !== Math.floor(num)){ // if not whole number
       num= num*2; 
       break;
     }else{
