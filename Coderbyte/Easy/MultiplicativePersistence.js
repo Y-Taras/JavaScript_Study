@@ -5,7 +5,7 @@
     
   Challenge: ACCEPTED.
     * Same steps as Additive Persistence:
-      - I just changed addition sign to multiplication
+      - I just changed addition sign to multiplication.
       - Also changed addCount to multiplyCount.
       - And addNum to multiplyNum.
 */
