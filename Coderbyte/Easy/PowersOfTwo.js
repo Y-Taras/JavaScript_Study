@@ -31,7 +31,7 @@ function PowersofTwo(num){
     }	    
   }
   
-return num % 2 === 0 ? true : false;
+ return num % 2 === 0 ? true : false;
 }
 
 // TESTS
