@@ -22,7 +22,8 @@ function ThirdGreatest(strArr){
     return b.length-a.length;});
 
   var thirdGreatest=sortArr.slice(2,3); // third word in array
-    return thirdGreatest;
+  
+  return thirdGreatest;
 }
  
 // TESTS
