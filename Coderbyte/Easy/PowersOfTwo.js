@@ -14,9 +14,9 @@
       it becomes 2 or not a whole number.
     - As soon as it's no longer a whole number, this means it can't  
       be a power of two, return false.
-    - A final step to make sure if the whole number left is 2, is by 
-      either testing if the number equals to 2 or if the number goes 
-      perfectly into 2 using modulos.
+  * A final step to make sure if the whole number left is 2, is by 
+    either testing if the number equals to 2 or if the number goes 
+    perfectly into 2 using modulos.
 */
 
 function PowersofTwo(num){
