@@ -7,6 +7,7 @@
     * Same steps as Additive Persistence:
       - I just changed addition sign to multiplication
       - Also changed addCount to multiplyCount.
+      - And addNum to multiplyNum.
 */
 
 function MultiplicativePersistence(num){
@@ -18,8 +19,8 @@ function MultiplicativePersistence(num){
   // multiply together and turn back into array.
   while(result.length !== 1){ 
     var numString = result.join("*");
-    var addNum= eval(numString);
-    result= addNum.toString().split("");
+    var multiplyNum= eval(numString);
+    result= multiplyNum.toString().split("");
     multiplyCount++;
   }
 
