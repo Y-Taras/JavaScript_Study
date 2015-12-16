@@ -1,7 +1,35 @@
 /*
-
-working on it: http://jsfiddle.net/1nmzd0x7/4/
-
-http://www.pythontutor.com/javascript.html#code=function+ThirdGreatest(strArr%29%7B%0D%0A%09var+sortArr%3DstrArr.sort(function(a,b%29%7Breturn+a.length-b.length%3B%7D%29%3B%0D%0A%09var+theGreatest%3D%22%22%3B%0D%0A++var+secondGreatest%3D%22%22%3B%0D%0A++var+thirdGreatest%3D%22%22%3B%0D%0A++%0D%0A++for(var+i%3DsortArr.length-1%3B+i%3E0%3B+i--%29%7B%0D%0A++++if(theGreatest+%3D%3D%3D+%22%22%29%7B%0D%0A++++++theGreatest%3DsortArr%5Bi%5D%3B%0D%0A++++%7Delse%7B%0D%0A++%09++if(sortArr%5Bi%5D.length%3EtheGreatest.length%29%7B%0D%0A++++%09++secondGreatest%3DtheGreatest%3B%0D%0A++++++%7Delse+if(sortArr%5Bi%5D.length%3CtheGreatest.length+%7C%7C+sortArr%5Bi%5D.length+%3D%3D%3D+theGreatest.length%29%7B%0D%0A++++%09++if(sortArr%5Bi%5D.length%3EsecondGreatest.length%29%7B%0D%0A++++++%09++thirdGreatest%3DsecondGreatest%3B%0D%0A++++++%09++secondGreatest%3DsortArr%5Bi%5D%3B%0D%0A++++++++%7Delse+if(sortArr%5Bi%5D.length%3CsecondGreatest.length+%7C%7C+sortArr%5Bi%5D.length+%3D%3D%3D+secondGreatest.length%29%7B%0D%0A++++++%09++if(sortArr%5Bi%5D.length%3EthirdGreatest%29%7B%0D%0A++++++++%09++thirdGreatest%3DsortArr%5Bi%5D%3B%0D%0A++++++++++%7D%0D%0A++++++++%7D%0D%0A++++++%7D%0D%0A++++++%7D%0D%0A++++%7D%0D%0A++return+thirdGreatest%3B%0D%0A%7D%0D%0A+%0D%0A//+TESTS%0D%0Aconsole.log(ThirdGreatest(%5B%22hello%22,+%22world%22,+%22before%22,+%22all%22%5D%29%29%3B+//+world%0D%0Aconsole.log(ThirdGreatest(%5B%22hello%22,+%22world%22,+%22after%22,+%22all%22%5D%29%29%3B+//+after%0D%0Aconsole.log(ThirdGreatest(%5B%22coder%22,%22byte%22,%22code%22%5D%29%29%3B+//+code%0D%0Aconsole.log(ThirdGreatest(%5B%22abc%22,%22defg%22,%22z%22,%22hijk%22%5D%29%29%3B+//+abc%0D%0A&mode=display&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&textReferences=false&py=js&rawInputLstJSON=%5B%5D&curInstr=23
-
+  Challenge:
+  Using the JavaScript language, have the function ThirdGreatest(strArr)
+  take the array of strings stored in strArr and return the third largest word within
+  in. So for example: if strArr is ["hello", "world", "before", "all"] your output
+  should be world because "before" is 6 letters long, and "hello" and "world" are both 5,
+  but the output should be world because it appeared as the last 5 letter word in the
+  array. If strArr was ["hello", "world", "after", "all"] the output should be after
+  because the first three words are all 5 letters long, so return the last one. The array
+  will have at least three strings and each string will only contain letters.
+  
+  Challenge: ACCEPTED.
+  * First sort the array using sort() method and manipulate the function to work with arrays.
+  * By subtracting the second length from the first:
+    - the array is sorted from Greatest to Least.
+    - when two items have the same length the position isn't changed.
+  * Now the third word will always be the third greatest.
 */
+
+
+
+function ThirdGreatest(strArr){
+	var sortArr=strArr.sort(function(a,b){
+  	return b.length-a.length;});
+
+  var thirdGreatest=sortArr.slice(2,3); // third word in array
+  return thirdGreatest;
+}
+ 
+// TESTS
+console.log("---");
+alert(ThirdGreatest(["hello", "world", "before", "all"])); // world
+alert(ThirdGreatest(["hello", "world", "after", "all"])); // after
+alert(ThirdGreatest(["coder","byte","code"])); // code
+alert(ThirdGreatest(["abc","defg","z","hijk"])); // abc
