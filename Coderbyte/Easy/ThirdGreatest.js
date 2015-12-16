@@ -12,7 +12,7 @@
   Challenge: ACCEPTED.
   * First sort the array using sort() method and manipulate the function to work with arrays.
   * By subtracting the second length from the first:
-    - the array is sorted from Greatest to Least.
+    - the array is sorted from greatest to least.
     - when two items have the same length the position isn't changed.
   * Now the third word will always be the third greatest.
 */
