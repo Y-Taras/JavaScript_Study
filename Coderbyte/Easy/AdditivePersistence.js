@@ -14,12 +14,11 @@
     - Make use of eval() function and add together then split the result again to
       continue loop if still more than one items in array.
     - Add point to addCount everytime add numbers.
-    
 */
 
 function AdditivePersistence(num){
-	// turn into array and store result here.
-	var result=num.toString().split("");
+  // turn into array and store result here.
+  var result=num.toString().split("");
   var addCount=0;
   
   // if there are more than 1 numbers in array turn into string.
@@ -31,7 +30,7 @@ function AdditivePersistence(num){
     addCount++;
   }
 
-	return addCount;
+  return addCount;
 }
  
 // TESTS
