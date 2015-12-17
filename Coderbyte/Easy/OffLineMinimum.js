@@ -10,7 +10,7 @@
   return 4,1,5. 
 
   Challenge: ACCEPTED.
-	This challenge initially confused me because I thought they were asking to find the smallest
+  This challenge initially confused me because I thought they were asking to find the smallest
   integer in the whole array everytime you stop at E, but they are asking for the smallest
   integer before E for every E. Numbers after each E occurrence are not included.
   
@@ -35,23 +35,23 @@
 */
 
 function OffLineMinimum(strArr){
-	var onlyNums=strArr.join("").replace(/E/g, "");
-	var largestNum= Math.max(null,onlyNums);
-	var smallestNum=largestNum;
-	var secondSmallestNum=largestNum;
+  var onlyNums=strArr.join("").replace(/E/g, "");
+  var largestNum= Math.max(null,onlyNums);
+  var smallestNum=largestNum;
+  var secondSmallestNum=largestNum;
   var result=[];
 
-	for(var i=0; i<strArr.length; i++){
-  	if(!isNaN(strArr[i])){ 
-    	if(strArr[i]<smallestNum){
-    	  secondSmallestNum=smallestNum; 
+  for(var i=0; i<strArr.length; i++){
+    if(!isNaN(strArr[i])){ 
+      if(strArr[i]<smallestNum){
+        secondSmallestNum=smallestNum; 
       	smallestNum=strArr[i];
       }else if(strArr[i]<secondSmallestNum){
         secondSmallestNum=strArr[i];
       }
     }else if(/E/ig.test(strArr[i])){
     	result.push(smallestNum);
-      smallestNum=secondSmallestNum;    
+        smallestNum=secondSmallestNum;    
     }
   }
   return result.join(","); 
