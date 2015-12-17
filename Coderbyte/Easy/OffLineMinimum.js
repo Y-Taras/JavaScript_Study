@@ -50,8 +50,8 @@ function OffLineMinimum(strArr){
         secondSmallestNum=strArr[i];
       }
     }else if(/E/ig.test(strArr[i])){
-    	result.push(smallestNum);
-        smallestNum=secondSmallestNum;    
+      result.push(smallestNum);
+      smallestNum=secondSmallestNum;    
     }
   }
   return result.join(","); 
