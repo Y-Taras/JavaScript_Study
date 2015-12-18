@@ -36,6 +36,7 @@ function RunLength(str){
       result.push(1,str.charAt(i));
    }
  }
+ 
  return result.join("");
 }
 
