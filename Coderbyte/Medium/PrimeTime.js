@@ -7,8 +7,9 @@
 
   Challenge: ACCEPTED.
   Tips: 
-  - A prime number is a positive integer with only 2 factors 
-    (1 and integer itself) e.g. 1, 2, 3, 5, 7, 11, etc.
+  - A prime number is a whole number greater than 1, whose only two 
+    whole-number factors are 1 and itself. 
+    e.g. 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 etc.
     
   * One way to test if the number is not prime is by dividing
     the number by any number between 2-9 in a loop.
