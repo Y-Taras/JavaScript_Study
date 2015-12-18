@@ -11,10 +11,10 @@
   Challenge: ACCEPTED.
   * Loop through string.
     - If the letter is same as next one or before it add point to numRepeats.
-    - Also, if the letter is the same as the one before it but not the one 
-      after it, this must mean it's the last letter. Thus, push the numRepeats
-      and the current letter into the result. Don't forget to reset numRepeats
-      for different letter!
+      - Also, if the letter is the same as the one before it but not the one 
+        after it, this must mean it's the last letter. Thus, push the numRepeats
+        and the current letter into the result. Don't forget to reset numRepeats
+        for different letter!
     - Otherwise, if the letter is not the same as the one before or after it,
       this must mean there are no repeats thus push 1 and the letter into the
       result array.
