@@ -20,12 +20,12 @@
 */
 
 function PrimeTime(num){
-		for(var i=2; i<10; i++){
-    	// if result is whole number and the number doesn't divide by itself.
-  		if(num/i === Math.round(num/i) && num !==i){ /
-    		return false;
-    	}
-  	}
+  for(var i=2; i<10; i++){
+    // if result is whole number and the number doesn't divide by itself.
+    if(num/i === Math.round(num/i) && num !==i){ /
+      return false;
+    }
+  }
   return true;
 }
 
