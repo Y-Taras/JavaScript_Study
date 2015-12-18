@@ -32,7 +32,7 @@ function RunLength(str){
       	result.push(numRepeats,str.charAt(i)); // result = [3, w] 
         numRepeats=0; // reset for different letter
       }
-   }else{
+    }else{
       result.push(1,str.charAt(i));
    }
  }
