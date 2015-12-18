@@ -20,9 +20,7 @@
 */
 
 function PrimeTime(num){
-  // num divides by numbers between 2-9.
   for(var i=2; i<10; i++){
-    // if result is whole number and num doesn't divide by itself.
     if(num/i === Math.round(num/i) && num !==i){ 
       return false;
     }
