@@ -12,8 +12,8 @@
     - For every match found push the letter to result array.
   * Turn result array into a string.
   * Compare the result with str1, if they are the same return true.
-
 */
+
 function StringScramble(str1,str2){
   var str2Result=[]; 
   
