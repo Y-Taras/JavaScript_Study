@@ -16,19 +16,19 @@
     starts at 0, thus the result will be one prime after the answer.
 */
 function PrimeMover(num){
-	var primeArr=[];
+  var primeArr=[];
 	
   for(var i=2; i<=10000; i++){
-  	var isPrime=true;
+    var isPrime=true;
     
-  	for(var j=2; j<=i; j++){
-    	if(i/j === Math.round(i/j) && i !==j){ 
-      	isPrime=false;
-    	}
-  	}
+    for(var j=2; j<=i; j++){
+      if(i/j === Math.round(i/j) && i !==j){ 
+        isPrime=false;
+      }
+    }
     
     if(isPrime === true){
-    	primeArr.push(i);
+      primeArr.push(i);
     }
   	
   }
@@ -43,19 +43,19 @@ function PrimeMover(num){
 */
 
 function PrimeMover(num){
-	var primeArr=[]; // or var count =0;
+  var primeArr=[]; // or var count =0;
 	
   for(var i=2; i<=10000; i++){
-  	var isPrime=true;
+    var isPrime=true;
     
-  	for(var j=2; j<=i; j++){
-    	if(i/j === Math.round(i/j) && i !==j){ 
+    for(var j=2; j<=i; j++){
+      if(i/j === Math.round(i/j) && i !==j){ 
       	isPrime=false;
-    	}
-  	}
+      }
+    }
     
     if(isPrime === true){
-    	primeArr.push(i); // or count+=1;
+      primeArr.push(i); // or count+=1;
       
       // if num === the amount in array, we have arrived!
       if(num === primeArr.length){ // or if(num===count)
