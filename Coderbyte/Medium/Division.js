@@ -25,17 +25,17 @@ function Division(num1, num2){
   var num2Arr=[];
   
   // Store all possibly common factors of num1.
- for(var i=1; i<=num1;i++){
-  if(num1/i === Math.round(num1/i)){ 
-    num1Arr.push(i);
+  for(var i=1; i<=num1;i++){
+   if(num1/i === Math.round(num1/i)){ 
+     num1Arr.push(i);
+   }
   }
- }
   // Store all possibly common factors of num2.
- for(var i=1; i<=num2;i++){
-  if(num2/i === Math.round(num2/i)){ 
-    num2Arr.push(i);
+  for(var i=1; i<=num2;i++){
+   if(num2/i === Math.round(num2/i)){ 
+     num2Arr.push(i);
+   }
   }
- }
   // Now loop through both. If there are any matches, the greatest one is the GCF!
   /* this will loop through num1[0] first and compare it with all array items of num2 
     before moving on to num1[1]. */
