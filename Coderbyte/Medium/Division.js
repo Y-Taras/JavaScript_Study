@@ -24,19 +24,18 @@ function Division(num1, num2){
   var num1Arr=[];
   var num2Arr=[];
   
-  // Print all possibly common factors of num1
+  // Store all possibly common factors of num1.
  for(var i=1; i<=num1;i++){
   if(num1/i === Math.round(num1/i)){ 
     num1Arr.push(i);
   }
  }
-  // Print all possibly common factors of num2
+  // Store all possibly common factors of num2.
  for(var i=1; i<=num2;i++){
   if(num2/i === Math.round(num2/i)){ 
     num2Arr.push(i);
   }
  }
-  
   // Now loop through both. If there are any matches, the greatest one is the GCF!
   for(var i=0; i<num1Arr.length; i++){
     for(var j=0; j<num2Arr.length; j++){
