@@ -11,8 +11,8 @@
   same elements.
     
   Challenge: ACCEPTED.
-  I don't see anything different in the question from ArthGeo(easy). If there is some difference 
-  missed, I would appreciate someone letting me know. I just re-did the same thing as ArithGeo(geo).
+  I don't see anything different in the question from ArithGeo(easy). If there is some difference 
+  missed, I would appreciate someone letting me know. I just re-did the same thing as ArithGeo(easy).
   
   * Loop through the array.
     - Start from 1 so you can subtract the current number from the one before it to test
