@@ -52,6 +52,7 @@ function Division(num1, num2){
  return GreatComFact;
 }
 
+// TESTS
 console.log("---");
 console.log(Division(12,16)); // 4
 console.log(Division(7,3)); // 1
