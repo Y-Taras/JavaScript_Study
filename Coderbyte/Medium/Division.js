@@ -37,9 +37,11 @@ function Division(num1, num2){
   }
  }
   // Now loop through both. If there are any matches, the greatest one is the GCF!
+  /* this will loop through num1[0] first and compare it with all array items of num2 
+    before checking num1[1]. */
   for(var i=0; i<num1Arr.length; i++){
     for(var j=0; j<num2Arr.length; j++){
-      if(num1Arr[i] === num2Arr[j]){
+      if(num1Arr[i] === num2Arr[j]){ 
       	if(num1Arr[i]>GreatComFact){
           GreatComFact=num1Arr[i];
         }
