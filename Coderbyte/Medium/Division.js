@@ -20,35 +20,35 @@
 */
 
 function Division(num1, num2){
-	var GreatComFact=0;
+  var GreatComFact=0;
   var num1Arr=[];
   var num2Arr=[];
   
   // Print all possibly common factors of num1
- 	for(var i=1; i<=num1;i++){
-  	if(num1/i === Math.round(num1/i)){ 
-    	num1Arr.push(i);
-  	}
+ for(var i=1; i<=num1;i++){
+  if(num1/i === Math.round(num1/i)){ 
+    num1Arr.push(i);
   }
+ }
   // Print all possibly common factors of num2
- 	for(var i=1; i<=num2;i++){
-  	if(num2/i === Math.round(num2/i)){ 
-    	num2Arr.push(i);
-  	}
+ for(var i=1; i<=num2;i++){
+  if(num2/i === Math.round(num2/i)){ 
+    num2Arr.push(i);
   }
+ }
   
   // Now loop through both. If there are any matches, the greatest one is the GCF!
   for(var i=0; i<num1Arr.length; i++){
-  	for(var j=0; j<num2Arr.length; j++){
-    	if(num1Arr[i] === num2Arr[j]){
+    for(var j=0; j<num2Arr.length; j++){
+      if(num1Arr[i] === num2Arr[j]){
       	if(num1Arr[i]>GreatComFact){
-        	GreatComFact=num1Arr[i];
+          GreatComFact=num1Arr[i];
         }
       }
     }
   }
   
-  return GreatComFact;
+ return GreatComFact;
 }
 
 console.log("---");
