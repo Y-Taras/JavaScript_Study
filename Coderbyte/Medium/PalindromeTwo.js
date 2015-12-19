@@ -31,7 +31,7 @@ function PalindromeTwo(str){
 
 // TESTS
 console.log("---");
-console.log(PalindromeTwo("derP die hErp")); // false
+console.log(PalindromeTwo("derP dier hErp")); // false
 console.log(PalindromeTwo("Anne, I vote more cars race Rome-to-Vienna")); // true
 console.log(PalindromeTwo("Noel - sees Leon"  )); // true
 console.log(PalindromeTwo("A war at Tarawa!")); // true
