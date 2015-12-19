@@ -15,12 +15,12 @@
 
 */
 function StringScramble(str1,str2){
-	var str2Result=[]; 
+  var str2Result=[]; 
   
   // This loop will loop through all of str1 for every str2[i].
   for(var i=0; i<str2.length; i++){
-  	for(var j=0; j<str1.length; j++){
-    	if(str2.charAt(i)===str1.charAt(j)){
+    for(var j=0; j<str1.length; j++){
+      if(str2.charAt(i)===str1.charAt(j)){
       	str2Result.push(str2.charAt(i));
       }
     }
@@ -29,9 +29,9 @@ function StringScramble(str1,str2){
   str2Result=str2Result.join(""); // [w,o,r,l,d] ==> world
   
   if(str2 === str2Result){ // world === world ?
-  	return true;
+    return true;
   }else{
-  	return false;
+    return false;
   }
 }
 
