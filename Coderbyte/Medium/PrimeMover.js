@@ -67,6 +67,7 @@ function PrimeMover(num){
 	
 }
 // TESTS
+console.log("---");
 console.log(PrimeMover(16)); // 53
 console.log(PrimeMover(9)); // 23
 console.log(PrimeMover(100)); // 541
