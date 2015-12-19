@@ -62,9 +62,7 @@ function PrimeMover(num){
       	return i;
       }
     }
-  	
   }
-	
 }
 // TESTS
 console.log("---");
