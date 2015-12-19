@@ -19,13 +19,13 @@
 */
 
 function PalindromeTwo(str){
-	str=str.toLowerCase().replace(/\W/g, "");
+  str=str.toLowerCase().replace(/\W/g, "");
   var reversedStr=str.split("").reverse().join("");
   
-	if(str === reversedStr){
-  	return true;
+  if(str === reversedStr){
+    return true;
   }else{
-  	return false;
+    return false;
   }
 }
 
