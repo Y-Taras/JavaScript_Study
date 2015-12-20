@@ -25,7 +25,7 @@ function LetterChanges(str) {
       if(character==="z") {// because z returns }
         return "A";
       }else{
-        // charCode() gets Unicode. fromCharCode() gets letter from Unicode.
+        // charCode() gets Unicode. String.fromCharCode() gets letter from Unicode.
         // +1 means next Unicode, combined with fromCharCode means next letter.
         var newLetter=String.fromCharCode(character.charCodeAt(0) +1); //
           if(/[aeiou]/i.test(newLetter)) { // if letter is vowel, using regExp.
