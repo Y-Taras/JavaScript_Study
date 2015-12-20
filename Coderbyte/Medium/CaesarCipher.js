@@ -11,6 +11,7 @@
  Tips:
  - charCode() gets Unicode from position of item. 
  - String.fromCharCode() gets letter from Unicode.
+ - The \s metacharacter is used to find a whitespace character.
 
   * Split the string into individual items/letters array.
   * Use map() to loop through this array aand create a new array.
