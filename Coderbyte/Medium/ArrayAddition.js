@@ -38,8 +38,8 @@ function ArrayAdditionI(array){
 
 // TESTS
 console.log("-----");
-console.log(ArrayAdditionI([1,2,3,5,4])); // true
-console.log(ArrayAdditionI([21,10,12,9,2])); // true
-console.log(ArrayAdditionI([4,6,23,10,1,3])); // true
-console.log(ArrayAdditionI([5,7,16,1,2])); // false
-console.log(ArrayAdditionI([3,5,-1,8,12])); // true
+console.log(ArrayAddition([1,2,3,5,4])); // true
+console.log(ArrayAddition([21,10,12,9,2])); // true
+console.log(ArrayAddition([4,6,23,10,1,3])); // true
+console.log(ArrayAddition([5,7,16,1,2])); // false
+console.log(ArrayAddition([3,5,-1,8,12])); // true
