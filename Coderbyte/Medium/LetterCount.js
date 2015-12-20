@@ -12,25 +12,25 @@
  */
 
  function LetterCount(str){
- 	var wordsArr=str.split(" ");
+  var wordsArr=str.split(" ");
   var numRepeats= {};
   var greatestNumRepeatsWord="";
  
- 	wordsArr.forEach(function(word){ // for every word in array
-  	var findMatch=word.toLowerCase().split("").sort().join("").match(/(.)\1+/g);
+   wordsArr.forEach(function(word){ // for every word in array
+   var findMatch=word.toLowerCase().split("").sort().join("").match(/(.)\1+/g);
     
-    if(findMatch !== null && findMatch !== 0){
-    	numRepeats[word]=findMatch;
-    }else{
-    	numRepeats[word]=-1;
-    }
+     if(findMatch !== null && findMatch !== 0){
+       numRepeats[word]=findMatch;
+     }else{
+       numRepeats[word]=-1;
+     }
   });
   
-	for(var word in numRepeats){
-  	if(numRepeats[word].length>greatestNumRepeatsWord.length){
-    	greatestNumRepeatsWord=word;
-    }
-  }
+   for(var word in numRepeats){
+     if(numRepeats[word].length>greatestNumRepeatsWord.length){
+       greatestNumRepeatsWord=word;
+     }
+   }
  
  return greatestNumRepeatsWord ? greatestNumRepeatsWord : -1;
  }
