@@ -24,7 +24,7 @@
     - Don't forget to include space if character is a space or
       it will return without it.
   * Turn the array into a string and return it.
- */
+*/
 
 function CaesarCipher(str,num){
   var letters=str.split("");
