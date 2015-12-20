@@ -27,17 +27,17 @@ function BinaryConverter(str){
   var result=0;
   
   for(var i=0; i<strArr.length; i++){
- 	  newStrArr.unshift(strArr[i]);
- 	}
- 	
- 	for(var i=0; i<newStrArr.length; i++){
-  	if(newStrArr[i]==="1"){
-  		result+=Math.pow(2, i);
-    }
+    newStrArr.unshift(strArr[i]);
   }
+ 	
+   for(var i=0; i<newStrArr.length; i++){
+     if(newStrArr[i]==="1"){
+       result+=Math.pow(2, i);
+     }
+   }
   
-  return result;
- }
+ return result;
+}
  
 // TESTS
 console.log(BinaryConverter("101")) // 5
