@@ -23,17 +23,17 @@
 */
  
 function SimpleMode(arr){
- 	var match=null;
+ var match=null;
   
   for(var i=0; i<arr.length; i++){
-  	for(var j=1; j<arr.length; j++){
-    	if(arr[i]===arr[j] && i!==j &&  match===null){
+    for(var j=1; j<arr.length; j++){
+      if(arr[i]===arr[j] && i!==j &&  match===null){
       	match=arr[i];
       }
     }
   }
   
-  return match !==null ? match : -1;
+ return match !==null ? match : -1;
 }
  
 // TESTS
