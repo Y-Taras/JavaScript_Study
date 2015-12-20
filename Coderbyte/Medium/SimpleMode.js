@@ -18,6 +18,9 @@
       not in the same position, and the match is intially null,
       this means it is the first match. 
         - Set it to this number.
+    - Else if is not needed because any other match that is
+      not intially set to null means it's a second match and
+      the challenge only wants the first.
 * If there is at least one match return it, otherwise return -1.
  
 */
