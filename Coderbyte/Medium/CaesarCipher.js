@@ -22,18 +22,18 @@
       - Push result into a new array.
     - Don't forget to include space if character is a space or
       it will return without it.
-    - Turn the array into a string and return it.
+  * Turn the array into a string and return it.
  */
 
 function CaesarCipher(str,num){
-	var letters=str.split("");
+  var letters=str.split("");
   var shifted=[];
   
   letters.map(function(letter){
-  	if(/[a-z]/i.test(letter)){ // if character is a letter.
-    	shifted.push(String.fromCharCode(letter.charCodeAt(0)+num));
+    if(/[a-z]/i.test(letter)){ // if character is a letter.
+      shifted.push(String.fromCharCode(letter.charCodeAt(0)+num));
     }else if(/\s/g.test(letter)){ // if character is space.
-    	shifted.push(" "); // include space in array.
+      shifted.push(" "); // include space in array.
     }
   })
   
