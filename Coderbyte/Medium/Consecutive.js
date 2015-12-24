@@ -19,27 +19,28 @@
 */
 
 function Consecutive(arr){
- 	var arrSort=arr.sort(function(a,b){return a-b;});
-  var numNeed=0;
+ var arrSort=arr.sort(function(a,b){return a-b;});
+ var numNeed=0;
   
-  for(var i=1; i<arrSort.length; i++){
+ for(var i=1; i<arrSort.length; i++){
   	numNeed+=arr[i]-arr[i-1]-1;
-  }
-  return numNeed;
  }
+ 
+ return numNeed;
+}
 
 /*
  Second way:
   * Sort the array from smallest to greatest.
   * Loop through the array starting from the second item in the array.
-	  - If current number-1 !== the number before it:
-  	  - subtract -1 from the current number and add a point for
-  	    the numbers in between needed until you arrive at the
-  	    number before it.
+    - If current number-1 !== the number before it:
+    - subtract -1 from the current number and add a point for
+      the numbers in between needed until you arrive at the
+      number before it.
  */
 
 function Consecutive(arr){
-	var arrSort=arr.sort(function(a,b){return a-b;});
+  var arrSort=arr.sort(function(a,b){return a-b;});
   var numNeed=0;
   
   for(var i=1; i<arrSort.length; i++){
