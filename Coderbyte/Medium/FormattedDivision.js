@@ -16,10 +16,10 @@
       - Add commas by first slicing everything before the decimal and storing
         this into a new array.
         - While looping backwards every 3 add a comma until you reach first number.
-      - Add "." to this array.
+        - Add "." to this array.
       - To round the numbers and include at least and only 4 numbers after decimal
         create a new array that will store all numbers after decimal.
-        - If the length of the array is 5 numbers or more and the 5th number if
+        - If the length of the array is 5 numbers or more and the 5th number is
           greater than 5, round the 4th number by 1. Only include first four numbers
           after decimal.
         - Otherwise if there are less than four items in the array add 0 until
@@ -49,7 +49,7 @@ function FormattedDivision(num1, num2){
       	var newArr=divide.slice(i+1); // all numbers after "."
       	if(newArr.length>=4){ // if there 5 numbers or more in array.
           if(newArr[4]>=5){ // if 5th character is 5 or greater.
-            newArr[3]=parseInt(newArr[3]) + 1; // increase/"round" number by 1.
+            newArr[3]=parseInt(newArr[3]) + 1; // increase/"round" 4th num up by 1.
             newArr=newArr.slice(0, 4); // include only first four numbers.
           }
         }else{
