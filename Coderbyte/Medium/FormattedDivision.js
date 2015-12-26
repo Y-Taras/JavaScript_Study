@@ -28,40 +28,38 @@
 */
 
 function FormattedDivision(num1, num2){
-	var divide=(num1/num2).toString().split("");
-	var result=[];
+  var divide=(num1/num2).toString().split("");
+  var result=[];
 	
-	// if the divided result is a whole number.
-	if(num1/num2 === Math.round(num1/num2)){
+  // if the divided result is a whole number.
+  if(num1/num2 === Math.round(num1/num2)){
     divide.push("."+0+0+0+0); // add "." + four zeros in the end.
     result=divide;
   }else{
     for(var i=0; i<divide.length; i++){ // loop through array.
       // add commas
       if(divide[i]==="."){ // if character in array is decimal.
-  	    var commaArr=divide.slice(0,i); // split from first number until "."
-  	    for(var k=commaArr.length-3; k>0; k-=3){ // add a comma every 3 starting from end.
-  	      commaArr[k]= "," + commaArr[k];  
-  	    }
-    	  commaArr.push("."); // add "." to array.
+      	var commaArr=divide.slice(0,i); // split from first number until "."
+  	for(var k=commaArr.length-3; k>0; k-=3){ // add a comma every 3 starting from end.
+  	  commaArr[k]= "," + commaArr[k];  
+  	}
+    	commaArr.push("."); // add "." to array.
     	  
       // only first 4 after "." and round.
       	var newArr=divide.slice(i+1); // all numbers after "."
-      		if(newArr.length>=4){ // if there 5 numbers or more in array.
-          	if(newArr[4]>=5){ // if 5th character is 5 or greater.
-              newArr[3]=parseInt(newArr[3]) + 1; // increase/"round" number by 1.
-              newArr=newArr.slice(0, 4); // include only first four numbers.
-              break; 
-            }
-          }else{
-          	while(newArr.length<4){ // add 0s until there are 4 numbers after decimal.
-          		newArr.push(0); 
-            }
-        	}
-        break;
+      	if(newArr.length>=4){ // if there 5 numbers or more in array.
+          if(newArr[4]>=5){ // if 5th character is 5 or greater.
+            newArr[3]=parseInt(newArr[3]) + 1; // increase/"round" number by 1.
+            newArr=newArr.slice(0, 4); // include only first four numbers.
+          }
+        }else{
+          while(newArr.length<4){ // add 0s until there are 4 numbers after decimal.
+            newArr.push(0); 
+          }
+        }
+      result=commaArr.concat(newArr); // combine two arrays.
       }
     }
-    result=commaArr.concat(newArr); // combine two arrays.
   }
   return result.join("");
 }
