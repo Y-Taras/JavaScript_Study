@@ -15,10 +15,10 @@
 
 function FirstReverse(str) { 
   var letters = str.split("");
-  var reversedString=[];
+  var reversedString = [];
   	
-  for(var i=0; i<letters.length; i++){
-    reversedString.unshift(letters[i])
+  for(var i = 0; i < letters.length; i++) {
+    reversedString.unshift(letters[i]);
   }
   
   return reversedString.join("");     
@@ -31,9 +31,9 @@ function FirstReverse(str) {
 */
     
 function FirstReverse(str) { 
-  var reversedString=""; // have to add ="" or it will output undefined.
+  var reversedString = ""; // have to add ="" or it will output undefined.
   	
-  for(var i=str.length-1; i>=0; i--){
+  for(var i = str.length-1; i >= 0; i--) {
     reversedString+=(str[i]);
   }
   
@@ -47,3 +47,7 @@ function FirstReverse(str) {
 function FirstReverse(str) {
   return str.split("").reverse().join("");
 }
+
+// TESTS
+console.log(FirstReverse("coderbyte")); // "etybredoc"
+console.log(FirstReverse("I Love Code")); // "edoC evoL I"
