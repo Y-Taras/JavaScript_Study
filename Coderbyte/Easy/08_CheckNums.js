@@ -6,15 +6,15 @@
   values are equal to each other then return the string -1.
   
   Challenge: ACCEPTED.
-  * Step by step instructions are literally in the explanation.
+  * Using a ternary operator if both numbers are equal return -1.
+  * Otherwise, return the result of num2 > num1. So if num2 is greater than 
+    num1 it will return true, otherwise it will return false.
 */
 
 function CheckNums(num1,num2) { 
-  if(num2===num1){ // I recommend putting this if statement first to dodge any possible errors/wrong results..
-  	return -1; 
-  }else if(num2>num1){
-  	return true; 
-  }else{
-    return false;  
-  }      
+  return num1 === num2 ? -1 : num2 > num1;
 }
+
+// TESTS
+console.log(CheckNums(3, 122)); // true
+console.log(CheckNums(67, 67)); // -1
