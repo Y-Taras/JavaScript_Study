@@ -26,29 +26,34 @@
     - If neither work, return -1.
 */
 
-function ArithGeo(arr){
+function ArithGeo(arr) {
   var arithmetic=[];
   var geometric=[];
   
-  for(var i=1; i<arr.length; i++){
+  for(var i=1; i<arr.length; i++) {
     arithmetic.push(arr[i]-arr[i-1]);// number - previous number
     geometric.push(arr[i]/arr[i-1]); // number / previous number
   }
   
-  function isSame(arr){ // test if all values in array the same
-    for(var i=1; i<arr.length; i++){
-      if (arr[i] !== arr[0]){ // if all values not the same as first number
+  function isSame(arr) { // test if all values in array the same
+    for(var i=1; i<arr.length; i++) {
+      if (arr[i] !== arr[0]) { // if all values not the same as first number
         return false; // means there is at least one false case. 
       }
     }
     return true; // otherwise if same, true.
   }
   
-  if(isSame(arithmetic)){
+  if(isSame(arithmetic)) {
     return "Arithmetic";
-  }else if(isSame(geometric)){
+  }else if(isSame(geometric)) {
     return "Geometric";
   }else{
     return -1;
   }
 }
+
+// TESTS
+console.log(ArithGeo([5, 10, 15])); // "Arithmetic"
+console.log(ArithGeo([2, 6, 18, 54])); // "Geometric"
+console.log(ArithGeo([2, 4, 16, 24])); // -1
