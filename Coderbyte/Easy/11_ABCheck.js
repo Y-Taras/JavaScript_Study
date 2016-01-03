@@ -17,13 +17,13 @@
       - If find "b", do the same(I later found this part was redundant, so I commented it out). 
 */
 
-function ABCheck(str){
+function ABCheck(str) {
   var chars = str.toLowerCase().split("");
   var result=false;
   
   for(var i=0; i<chars.length; i++) {
     if(chars[i] === "a") { //assuming all inputs are lowercase
-    	if("b" === chars[i+4] || "b" === chars[i-4]){
+    	if("b" === chars[i+4] || "b" === chars[i-4]) {
       		result=true;
     	}
     }
@@ -44,7 +44,12 @@ function ABCheck(str){
   THIS IS AWESOME!!!
 */
 
-function ABCheck(str){
+function ABCheck(str) {
   var chars = str.toLowerCase().split("");
 	return /a...b/.test(str) || /b...a/.test(str);
 }
+
+// TESTS
+console.log(ABCheck("after badly")); // false
+console.log(ABCheck("Laura sobs")); // true
+console.log(ABCheck("lane borrowed")); // true
