@@ -16,3 +16,7 @@ function AlphabetSoup(str) {
   
   return alphabetize;        
 }
+
+// TESTS
+console.log(AlphabetSoup("coderbyte")); // "bcdeeorty"
+console.log(AlphabetSoup("hooplah")); // "ahhloop"
