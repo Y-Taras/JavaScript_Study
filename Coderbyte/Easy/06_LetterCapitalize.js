@@ -13,13 +13,16 @@
 */
 
 function LetterCapitalize(str) { 
-  var words=str.split(" ");
-  var newArrString=[];
+  var words = str.split(" ");
+  var newArrString = [];
   
-  for(var i=0; i<words.length;i++) {
-    newArrString.push(words[i]=words[i].charAt(0).toUpperCase() + words[i].slice(1));
+  for(var i = 0; i < words.length; i++) {
+    newArrString.push(words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1));
   }
   
   return newArrString.join(" ");
 }
 
+// TESTS
+console.log(LetterCapitalize("hello world")); // "Hello World"
+console.log(LetterCapitalize("i ran there")); // "I Ran There"
