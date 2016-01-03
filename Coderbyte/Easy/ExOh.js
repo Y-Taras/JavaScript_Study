@@ -16,17 +16,18 @@
   * After loop, test both counts and return true if they are the same amount.
 */
 
-function ExOh(str){
-  var xCount=0, oCount=0;
+function ExOh(str) {
+  var xCount=0
+  var oCount=0;
+  
   for(var i=0; i<str.length; i++) {  
-    if(str[i] === "x"){
+    if(str[i] === "x") {
       xCount+=1;
-    }else if(str[i] === "o"){ // I could have just put "else" here since input will always be x's and os'.
+    }else if(str[i] === "o") { // I could have just put "else" here since input will always be x's and os'.
       oCount+=1;
     }
  }
 
-  
   return xCount === oCount ? true : false; // a simpler if else statement. boolean question ? if true : if false
 }
 
@@ -37,21 +38,24 @@ Second way(more complex. Using regExp and objects):
     - Use regExp to test if character in string is x or o.
     - Add corresponding point to x or o count property.
   * After loop, test both object properties and return true if they are the same amount.
-
 */
 
-function ExOh(str){
-  var count={
+function ExOh(str) {
+  var count = {
     xCount:0, 
     oCount:0
   }
   for(var i=0; i<str.length; i++) {  
-    if(/x/.test(str[i])){
+    if(/x/.test(str[i])) {
       count.xCount+=1;
-    }else if(/o/.test(str[i])){ 
+    }else if(/o/.test(str[i])) { 
       count.oCount+=1;
     }
  }
 
   return count.xCount === count.oCount ? true : false;
 }
+
+// TESTS
+console.log(ExOh("xooxxo")); // true
+console.log(ExOh("x")); // false
