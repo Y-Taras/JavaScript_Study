@@ -23,16 +23,16 @@
       to the largest number.
 */
 
- function ArrayAdditionI(array){
+function ArrayAdditionI(array) {
   var largestNum = Math.max.apply(0, array); // gets the largest number in array.
-  array.sort(function(a,b){ return a-b;}).pop(); // sorts array and removes last(largest) number.
+  array.sort(function(a,b) { return a-b;}).pop(); // sorts array and removes last(largest) number.
   
-  function recursionCheck(arr, sum){
+  function recursionCheck(arr, sum) {
     // the base case when array empty.
-    if(arr.length === 0){ 
+    if(arr.length === 0) { 
       return sum === 0;
     }
-      var arrBeginNum=arr[0];
+      var arrBeginNum=arr[0] ;
       // for every recursion take away one number(the first one in this case).
       arr = arr.slice(1);
       // first check if numbers sum up to largest num if not, check if removing numbers adds up to largest num.
@@ -44,8 +44,8 @@
 
 // TESTS
 console.log("-----");
-console.log(ArrayAdditionI([1,2,3,5,4])); ==> true
-console.log(ArrayAdditionI([21,10,12,9,2])); ==> true
-console.log(ArrayAdditionI([4,6,23,10,1,3])); ===> true
-console.log(ArrayAdditionI([5,7,16,1,2])); ===> false
-console.log(ArrayAdditionI([3,5,-1,8,12])); ===> true
+console.log(ArrayAdditionI([1,2,3,5,4])); // true
+console.log(ArrayAdditionI([21,10,12,9,2])); // true
+console.log(ArrayAdditionI([4,6,23,10,1,3])); // true
+console.log(ArrayAdditionI([5,7,16,1,2])); // false
+console.log(ArrayAdditionI([3,5,-1,8,12])); // true
