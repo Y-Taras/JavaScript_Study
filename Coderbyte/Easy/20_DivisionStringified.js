@@ -7,7 +7,8 @@
   
   Challenge: ACCEPTED.
   Tips:
-    - Starting last is more convenient because the last 3 numbers do not have a comma.
+    - Start last because the third to last always has commas if there are at least
+      4 numbers.
   * First divide the numbers normally and round to get whole numbers.
   * Then we need to turn the numbers into an array.
   * If the numbers length is greater than 3 loop throught the array every 3
@@ -15,11 +16,11 @@
   * Add a comma before every three items and return result as a string.
 */
 
-function DivisionStringified(num1, num2){
+function DivisionStringified(num1, num2) {
   var divide=Math.round((num1/num2)).toString().split("");
   
-  if(divide.length>3){
-    for(var i=divide.length-3; i>0; i-=3){
+  if(divide.length>3) {
+    for(var i=divide.length-3; i>0; i-=3) {
       divide[i]= "," + divide[i];
     } 
   }
@@ -28,7 +29,7 @@ function DivisionStringified(num1, num2){
 
 // TESTS
 console.log("----");
-console.log(DivisionStringified(123456789, 10000)); //  === "12,346"
-console.log(DivisionStringified(5, 2)); // === "3"
-console.log(DivisionStringified(6874, 67)); //  === "103"
-console.log(DivisionStringified(2, 3)); //  === "1"
+console.log(DivisionStringified(123456789, 10000)); // "12,346"
+console.log(DivisionStringified(5, 2)); // "3"
+console.log(DivisionStringified(6874, 67)); // "103"
+console.log(DivisionStringified(2, 3)); // "1"
