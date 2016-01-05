@@ -11,7 +11,7 @@
  Tips:
   - concat() method returns a new array of the combines arrays.
   - arr.length - 2 gives the length of an array. 
-        arr[arr.length-2] gives the value on that index.
+    arr[arr.length-2] gives the value on that index.
  * First sort the array.
  * Before moving on, create a function that deletes any duplicates.
  * Now that the array is sorted and duplicates are gone, if there 
@@ -25,26 +25,26 @@
 */
 
 function SecondGreatLow(arr){
-	var theArr=arr.sort(function(a,b){return a-b;});
+  var theArr=arr.sort(function(a,b){return a-b;});
   var secondLow=[];
   var secondGreat=[];
   
  function findDuplicates(arr){
   for(var i=0; i<arr.length - 1; i++){ // loop up to second to last number.
       if(arr[i]===arr[i+1]){ // compare current number with one to the right of it.
-        arr.splice(i,1); // if they are the space, remove it.
+        arr.splice(i,1); // if they are the same, remove it.
     }
   }
    return arr;
  }
   theArr= findDuplicates(theArr);
   
-  // of this works because it is sorted.
+  // this works because it is sorted.
   if(theArr.length>2){
   	secondLow.push(theArr[1]); 
   	secondGreat.push(theArr[theArr.length-2]);
   }else{
-  	secondLow.push(theArr[0]); 
+  	secondLow.push(theArr[1]); 
   	secondGreat.push(theArr[0]);
   }
 
