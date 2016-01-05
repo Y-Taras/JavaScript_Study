@@ -16,17 +16,16 @@
  
 function SwapCase(str){
   var strArr=str.split("");
-  var newStr=[];
   
-  strArr.map(function(char){
-    if(/[a-z A-Z]/.test(char)){ // if letter
+  var newStr=strArr.map(function(char){
+  	if(/[a-z A-Z]/.test(char)){ // if letter
       if(char === char.toLowerCase()){ // if letter is the same as a lowercase letter
-      	newStr.push(char.toUpperCase()); // capitalize it
+      	return char.toUpperCase(); // capitalize it
       }else if(char === char.toUpperCase()){ // is letter is the same as capitalized
-      	newStr.push(char.toLowerCase()); // lowercase it
+      	return char.toLowerCase(); // lowercase it
       }
     }else {
-    	newStr.push(char);
+    	return char;
     }
   });
   return newStr.join("");
